@@ -1,0 +1,72 @@
+{
+  "name": "chuah48263",
+  "homepage": "http://chuah48263.bitballoon.com",
+  "authors": [
+    "chuah48263 <chuah48263@gmail.com>"
+  ],
+  "description": "A Personal Portfolio Webpage.",
+  "main": "index.html, js/main.js, js/app.js, js/controllers/MainController.js, css/main.css",
+  "moduleType": [],
+  "keywords": [
+    "chuah48263",
+    "portfolio",
+    "career",
+    "profile",
+    "resume",
+    "personal",
+    "professional",
+    "job"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "fullpage.js": "~2.7.4",
+    "WebFont-OpenSans": "webfont-opensans#~0.0.2"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css"
+      ]
+    },
+    "fullpage.js": {
+      "main": [
+        "jquery.fullPage.min.js",
+        "jquery.fullPage.css"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "angular": {
+      "main": [
+        "angular.min.js"
+      ]
+    },
+    "angular-sanitize": {
+      "main": [
+        "angular-sanitize.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.bitballoon
+grunt-bitballoon.json
+*.css.map
+.sass-cache
+!node_modules
+!bower_components
+!dist
+temp
+temps
+.sublime-grunt.cache
+Trash
+.localized
+.DS_Store

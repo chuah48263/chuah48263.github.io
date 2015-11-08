@@ -1,0 +1,150 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <base href="./">
+  <title>chuah48263</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" />
+  <link rel="stylesheet" href="bower_components/WebFont-OpenSans/css/stylesheet.css" />
+  <!-- endbower -->
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body ng-app="app" ng-controller="MainController">
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">{{brand}}</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" id="myMenu">
+          <li data-menuanchor="Home"><a href="#Home">{{home}}</a></li>
+          <li data-menuanchor="About"><a href="#About">{{about}}</a></li>
+          <li data-menuanchor="Portfolio"><a href="#Portfolio">{{portfolio}}</a></li>
+          <li data-menuanchor="Contact"><a href="#Contact">{{contact}}</a></li>
+        </ul>
+        <ul class="nav navbar-form navbar-right">
+          <li class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" ng-click="lang('en')" ng-class="{active: isEn}">En</button>
+            <button type="button" class="btn btn-default" ng-click="lang('zh')" ng-class="{active: isZh}">中</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="fullpage">
+    <div class="jumbotron section" data-anchor="Home">
+      <div class="container-fluid">
+        <h1>{{title}}</h1>
+        <p>{{desc}}</p>
+        <hr />
+        <a class="btn btn-default btn-lg" ng-click="href('twitter')" role="button"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
+        <a class="btn btn-default btn-lg" ng-click="href('github')" role="button"><i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</a>
+        <a class="btn btn-default btn-lg" ng-click="href('linkedin')" role="button"><i class="fa fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a>
+        <a class="btn btn-default btn-lg" ng-click="href('facebook')" role="button"><i class="fa fa-facebook"></i>&nbsp;&nbsp;Facebook</a>
+        <a class="btn btn-default btn-lg" ng-click="href('google+')" role="button"><i class="fa fa-google-plus"></i>&nbsp;&nbsp;Google+</a>
+        <a class="btn btn-default btn-lg" ng-click="href('freecodecamp')" role="button"><i class="fa fa-fire"></i>&nbsp;&nbsp;freeCodeCamp</a>
+      </div>
+    </div>
+    <div class="jumbotron section" data-anchor="About">
+      <div class="container-fluid">
+        <h2>{{aboutMe}}</h2>
+        <hr />
+        <p class="resume col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-bind-html="resume | toHtml"></p>
+        <div class="pic col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <img class="image" src="assets/img/AQkRvCa.jpg" />
+          <img class="image" src="assets/img//9PrqrS9.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron section" data-anchor="Portfolio">
+      <div class="container-fluid">
+        <h2 id="works">{{works}}</h2>
+        <hr id="works-hr" />
+        <div class="portfolio col-lg-4 col-md-4 col-sm-12 col-xs-12" ng-repeat="portfolio in portfolios">
+          <a class="portfolio-link" ng-href="{{portfolio.href}}" new-tab>
+            <img class="portfolio-img" ng-src="{{portfolio.src}}" />
+            <div class="portfolio-desc">{{portfolio.desc}}</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron section" data-anchor="Contact">
+      <div class="container-fluid">
+        <h1>{{contactMe}}</h1>
+        <hr />
+        <h2>{{name}}</h2>
+        <h2><a class="email" href="mailto:chuah48263@gmail.com">chuah48263@gmail.com</a></h2>
+        <h2><a class="email" href="mailto:chuah48263@icloud.com">chuah48263@icloud.com</a></h2>
+        <hr />
+        <a class="github-button" href="https://github.com/chuah48263" data-style="mega" data-count-href="/chuah48263/followers" data-count-api="/users/chuah48263#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @chuah48263 on GitHub" new-tab>Follow @chuah48263</a>
+        <a class="github-button" href="https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage" data-icon="octicon-eye" data-style="mega" data-count-href="/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/watchers" data-count-api="/repos/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage on GitHub" new-tab>Watch</a>
+        <a class="github-button" href="https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage" data-icon="octicon-star" data-style="mega" data-count-href="/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/stargazers" data-count-api="/repos/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage on GitHub" new-tab>Star</a>
+        <a class="github-button" href="https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/network" data-count-api="/repos/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage on GitHub" new-tab>Fork</a>
+        <a class="github-button" href="https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage on GitHub" new-tab>Issue</a>
+        <a class="github-button" href="https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage on GitHub" new-tab>Download</a>
+        <p>{{licensePre}}<a class="mit" ng-click="href('mit')">MIT</a>{{licensePost}}</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-69846254-1', 'auto');
+  ga('send', 'pageview');
+  ga('require', 'linkid');
+  </script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+  <![endif]-->
+  <!-- Vendors -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+  <!-- endbower -->
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Modules -->
+  <script src="js/app.js"></script>
+  <!-- Controllers -->
+  <script src="js/controllers/MainController.js"></script>
+  <!-- jQuery -->
+  <script src="js/main.js"></script>
+  </script>
+</body>
+
+</html>
