@@ -38,5 +38,6 @@
   "bugs": {
     "url": "https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/issues"
   },
-  "homepage": "http://chuah48263.bitballoon.com"
+  "homepage": "http://chuah48263.bitballoon.com",
+  "scripts": { "start": "node index.js" }
 }
