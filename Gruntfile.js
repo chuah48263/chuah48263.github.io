@@ -34,16 +34,6 @@ module.exports = function(grunt) {
         src: 'css/*.css'
       }
     },
-    bb: grunt.file.readJSON('./grunt-bitballoon.json'),
-    bitballoon: {
-      options: {
-        token: '<%= bb.token %>',
-        src: './'
-      },
-      prod: {
-        site: 'http://chuah48263.bitballoon.com'
-      }
-    },
     buildcontrol: {
       options: {
         dir: './',
@@ -61,6 +51,16 @@ module.exports = function(grunt) {
           remote: 'heroku',
           branch: 'master'
         }
+      }
+    },
+    bb: grunt.file.readJSON('./grunt-bitballoon.json'),
+    bitballoon: {
+      options: {
+        token: '<%= bb.token %>',
+        src: './'
+      },
+      prod: {
+        site: 'http://chuah48263.bitballoon.com'
       }
     }
   });
