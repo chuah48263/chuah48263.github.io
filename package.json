@@ -4,7 +4,7 @@
   "description": "A Personal Portfolio Webpage.",
   "main": "index.html, js/main.js, js/app.js, js/controllers/MainController.js, css/main.css",
   "dependencies": {
-    "node-static": "^0.7.7"
+    "express": "^4.13.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.0",
@@ -15,9 +15,6 @@
     "grunt-postcss": "^0.7.1",
     "grunt-wiredep": "^2.0.0",
     "pixrem": "^3.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -38,6 +35,5 @@
   "bugs": {
     "url": "https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/issues"
   },
-  "homepage": "http://chuah48263.bitballoon.com",
-  "scripts": { "start": "node index.js" }
+  "homepage": "http://chuah48263.bitballoon.com"
 }
