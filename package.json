@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A Personal Portfolio Webpage.",
   "main": "index.html, js/main.js, js/app.js, js/controllers/MainController.js, css/main.css",
-  "dependencies": {},
+  "dependencies": {
+    "node-static": "^0.7.7"
+  },
   "devDependencies": {
     "autoprefixer": "^6.1.0",
     "cssnano": "^3.3.2",
