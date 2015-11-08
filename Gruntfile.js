@@ -43,11 +43,33 @@ module.exports = function(grunt) {
       prod: {
         site: 'http://chuah48263.bitballoon.com'
       }
+    },
+    buildcontrol: {
+      options: {
+        dir: './',
+        commit: true,
+        push: true,
+      },
+      pages: {
+        options: {
+          remote: 'origin',
+          branch: 'master'
+        }
+      },
+      heroku: {
+        options: {
+          remote: 'heroku',
+          branch: 'master'
+        }
+      }
     }
   });
   grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-bitballoon');
-  grunt.registerTask('default', ['wiredep', 'sass', 'postcss', 'bitballoon']);
+  grunt.loadNpmTasks('grunt-build-control');
+  grunt.registerTask('default', ['wiredep', 'sass', 'postcss', 'bitballoon',
+    'buildcontrol'
+  ]);
 };
