@@ -69,7 +69,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-bitballoon');
   grunt.loadNpmTasks('grunt-build-control');
-  grunt.registerTask('default', ['wiredep', 'sass', 'postcss', 'bitballoon',
-    'buildcontrol'
+  grunt.registerTask('default', ['wiredep', 'sass', 'postcss', 'buildcontrol',
+    'bitballoon'
   ]);
 };
