@@ -38,37 +38,41 @@ app.controller('MainController', ['$scope', '$window', function($scope, $window)
     'href': 'http://pollnomena.herokuapp.com',
     'desc': 'Pollnomena'
   }, {
-    'src': 'assets/img/60bojJN.jpg',
-    'href': 'http://fcc-zipline-stylize-stories-on-camper-news.bitballoon.com/',
-    'desc': 'FCC Camper News'
+    'src': 'assets/img/WGx1XQv.jpg',
+    'href': 'http://fcc-zipline-build-a-simon-game.bitballoon.com',
+    'desc': 'Simon Game'
   }, {
     'src': 'assets/img/hZJr81o.jpg',
-    'href': 'http://fcc-zipline-build-a-pomodoro-clock.bitballoon.com/',
+    'href': 'http://fcc-zipline-build-a-pomodoro-clock.bitballoon.com',
     'desc': 'Pomodoro Clock'
   }, {
     'src': 'assets/img/0j4Flsf.jpg',
-    'href': 'http://fcc-zipline-show-the-local-weather.bitballoon.com/',
+    'href': 'http://fcc-zipline-show-the-local-weather.bitballoon.com',
     'desc': 'Local Weather App'
   }, {
     'src': 'assets/img/D3Ee2j0.jpg',
-    'href': 'http://fcc-zipline-build-a-tic-tac-toe-game.bitballoon.com/',
+    'href': 'http://fcc-zipline-build-a-tic-tac-toe-game.bitballoon.com',
     'desc': 'Tic Tac Toe'
   }, {
-    'src': 'assets/img/THUP9qh.jpg',
-    'href': 'http://fcc-zipline-wikipedia-viewer.bitballoon.com/',
-    'desc': 'Wikipedia Viewer'
+    'src': 'assets/img/60bojJN.jpg',
+    'href': 'http://fcc-zipline-stylize-stories-on-camper-news.bitballoon.com',
+    'desc': 'FCC Camper News'
   }, {
     'src': 'assets/img/PDrQClq.jpg',
-    'href': 'http://fcc-zipline-build-a-javascript-calculator.bitballoon.com/',
+    'href': 'http://fcc-zipline-build-a-javascript-calculator.bitballoon.com',
     'desc': 'JavaScript Calculator'
   }, {
     'src': 'assets/img/CvLDLKi.jpg',
-    'href': 'http://fcc-zipline-use-the-twitch-tv-json-api.bitballoon.com/',
+    'href': 'http://fcc-zipline-use-the-twitch-tv-json-api.bitballoon.com',
     'desc': 'Twitch.tv'
   }, {
     'src': 'assets/img/5Y6tsoV.jpg',
-    'href': 'http://fcc-zipline-build-a-random-quote-machine.bitballoon.com/',
+    'href': 'http://fcc-zipline-build-a-random-quote-machine.bitballoon.com',
     'desc': 'Random Quotes Machine'
+  // }, {
+  //   'src': 'assets/img/THUP9qh.jpg',
+  //   'href': 'http://fcc-zipline-wikipedia-viewer.bitballoon.com',
+  //   'desc': 'Wikipedia Viewer'
   }];
   var href = {
     'twitter': 'https://twitter.com/chuah48263',
