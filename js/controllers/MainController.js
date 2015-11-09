@@ -58,7 +58,7 @@ app.controller('MainController', ['$scope', '$window', function($scope, $window)
     'href': 'http://fcc-zipline-build-a-pomodoro-clock.bitballoon.com',
     'desc': 'Pomodoro Clock'
   }, {
-    'src': 'assets/img/PDrQClq.jpg',
+    'src': 'assets/img/C5sB0lT.jpg',
     'href': 'http://fcc-zipline-build-a-javascript-calculator.bitballoon.com',
     'desc': 'JavaScript Calculator'
   }, {
