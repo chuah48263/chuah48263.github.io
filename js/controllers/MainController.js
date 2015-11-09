@@ -42,9 +42,9 @@ app.controller('MainController', ['$scope', '$window', function($scope, $window)
     'href': 'http://fcc-zipline-build-a-simon-game.bitballoon.com',
     'desc': 'Simon Game'
   }, {
-    'src': 'assets/img/hZJr81o.jpg',
-    'href': 'http://fcc-zipline-build-a-pomodoro-clock.bitballoon.com',
-    'desc': 'Pomodoro Clock'
+    'src': 'assets/img/60bojJN.jpg',
+    'href': 'http://fcc-zipline-stylize-stories-on-camper-news.bitballoon.com',
+    'desc': 'FCC Camper News'
   }, {
     'src': 'assets/img/0j4Flsf.jpg',
     'href': 'http://fcc-zipline-show-the-local-weather.bitballoon.com',
@@ -54,9 +54,9 @@ app.controller('MainController', ['$scope', '$window', function($scope, $window)
     'href': 'http://fcc-zipline-build-a-tic-tac-toe-game.bitballoon.com',
     'desc': 'Tic Tac Toe'
   }, {
-    'src': 'assets/img/60bojJN.jpg',
-    'href': 'http://fcc-zipline-stylize-stories-on-camper-news.bitballoon.com',
-    'desc': 'FCC Camper News'
+    'src': 'assets/img/hZJr81o.jpg',
+    'href': 'http://fcc-zipline-build-a-pomodoro-clock.bitballoon.com',
+    'desc': 'Pomodoro Clock'
   }, {
     'src': 'assets/img/PDrQClq.jpg',
     'href': 'http://fcc-zipline-build-a-javascript-calculator.bitballoon.com',
