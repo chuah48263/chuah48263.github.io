@@ -69,10 +69,10 @@ app.controller('MainController', ['$scope', '$window', function($scope, $window)
     'src': 'assets/img/5Y6tsoV.jpg',
     'href': 'http://fcc-zipline-build-a-random-quote-machine.bitballoon.com',
     'desc': 'Random Quotes Machine'
-  // }, {
-  //   'src': 'assets/img/THUP9qh.jpg',
-  //   'href': 'http://fcc-zipline-wikipedia-viewer.bitballoon.com',
-  //   'desc': 'Wikipedia Viewer'
+      // }, {
+      //   'src': 'assets/img/THUP9qh.jpg',
+      //   'href': 'http://fcc-zipline-wikipedia-viewer.bitballoon.com',
+      //   'desc': 'Wikipedia Viewer'
   }];
   var href = {
     'twitter': 'https://twitter.com/chuah48263',
