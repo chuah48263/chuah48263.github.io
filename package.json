@@ -1,7 +1,7 @@
 {
   "name": "chuah48263",
   "version": "1.0.0",
-  "description": "A Personal Portfolio Webpage.",
+  "description": "Personal portfolio／résumé of Chuah Chee Shian (chuah48263), fullstack JavaScript web dev／engineer. JavaScript全端網頁工程師(蔡奇賢)的個人專頁／履歷。",
   "main": "index.html, js/main.js, js/app.js, js/controllers/MainController.js, css/main.css",
   "dependencies": {
     "express": "^4.13.3"
@@ -19,22 +19,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage.git"
+    "url": "git+https://github.com/chuah48263/chuah48263.github.io.git"
   },
-  "keywords": [
-    "chuah48263",
-    "portfolio",
-    "career",
-    "profile",
-    "resume",
-    "personal",
-    "professional",
-    "job"
+  "keywords": ["mean", "mean stack", "node", "node.js", "mongo", "mongodb",
+    "html", "css", "sass", "git", "express", "express.js", "angular.js",
+    "angular", "personal", "resume", "résumé", "portfolio",
+    "Chuah Chee Shian", "chuah48263", "fullstack", "frontend", "backend",
+    "javascript", "web", "dev", "developer", "engineer", "全端", "全棧", "前端",
+    "後端", "網頁", "工程師", "開發", "開發者", "蔡奇賢", "個人", "專頁", "履歷"
   ],
-  "author": "chuah48263 <chuah48263@gmail.com>",
+  "author": "chuah48263 (Chuah Chee Shian / 蔡奇賢) @ chuah48263@gmail.com / chuah48263@icloud.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chuah48263/FCC-Zipline-Build-a-Personal-Portfolio-Webpage/issues"
+    "url": "https://github.com/chuah48263/chuah48263.github.io/issues"
   },
-  "homepage": "http://chuah48263.bitballoon.com"
+  "homepage": "http://chuah48263.github.io",
+  "private": true
 }
