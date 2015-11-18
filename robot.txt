@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: http://chuah48263.github.io/sitemap.xml
